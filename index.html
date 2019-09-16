@@ -1,57 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Documento HTML</title>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    </head>
-    <body>
-        <h1> AJAX Examples</h1>
-        <fieldset>
-            <legend>Reading an XML and loading it into an un-ordered list</legend>
-            <div id="listContainer">
-                <ul id="restaurantCatalog">
-                </ul>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Reading an XML and loading it into a table</legend>
-            <div id="tableContainer">
-                <table id="foodTable">
-                    <tr>
-                        <th>Name</th>
-                        <th>Serving</th>
-                        <th>Calories</th>
-                        <th>Cholesterol</th>
-                        <th>Sodium</th>
-                        <th>Carbohydrates</th>
-                        <th>Fiber</th>
-                        <th>Protein</th>
-                    </tr>
-                    <!-- todos los datos -->
-                </table>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Reading a JSON file and loading it into a dropdown menu</legend>
-            <div id="dropdownMenuContainer">
-                <label> State: </label>
-                <select id="mexicanStates">
-                    <option value="0">Select a state...</option>
-                    
-                </select>
-                <label> Capital: </label>
-                <input id="stateCapital" type="text" value="">
-            </div>
-        </fieldset>
+<head>
+  <title>2019 Grammys</title>
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-        <fieldset>
-            <div id="pokemon">
-                
-            </div>
-        </fieldset>
-        <script type="text/javascript" src="./js/jquery.js"></script>
-        <script type="text/javascript" src="./js/index.js"></script>
-    </body>
+</head>
+<body>
+  <div class="container">
+    <h1>Grammys 2019 Nominees and Winners!</h1>
+
+    <select id="category_types">
+    </select>
+    <section id="nominees_section">
+        <h2 id="category_title"></h2>
+        <p id="description" class="description"></p>
+        <ul id="category_list"></ul>
+    </section>
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/grammys.js"></script>
+</body>
 </html>
-
